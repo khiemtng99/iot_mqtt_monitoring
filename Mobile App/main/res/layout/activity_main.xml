@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EDEAEA"
+            android:layout_weight="@android:integer/config_longAnimTime"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.6"
+                android:textSize="30dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="CONTROL LED"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_weight="1.2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="LED status"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/led_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_vertical"
+                    android:text="OFF"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <Button
+                    android:id="@+id/LED_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="LED BUTTON"
+                    android:textSize="15dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:text="GRAPH"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:background="#EDEAEA"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@android:integer/config_longAnimTime"
+            android:id="@+id/humLineChart"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:background="#EDEAEA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="@android:integer/config_longAnimTime"
+            android:id="@+id/tempLineChart"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:background="#EDEAEA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="@android:integer/config_longAnimTime"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lightLineChart"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

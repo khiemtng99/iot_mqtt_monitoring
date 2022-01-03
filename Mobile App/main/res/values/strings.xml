@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MQTT</string>
+    <string name="humidity">humidity</string>
+    <string name="temperature">temperature</string>
+    <string name="light">light</string>
+    <string name="value_in_24_hours">Value in 24 hour</string>
+</resources>
