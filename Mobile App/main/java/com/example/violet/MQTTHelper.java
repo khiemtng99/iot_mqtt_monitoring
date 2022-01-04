@@ -16,21 +16,21 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 public class MQTTHelper {
 
-    final String serverUri = "tcp://io.adafruit.com:1883";
+    final String serverUri = "x";
 
-    final String clientId = "Android_007";
+    final String clientId = "x";
 
-    final String humidityTopic = "ThanhVinhCE/feeds/humidity";
+    final String humidityTopic = "x";
 
-    final String temperatureTopic = "ThanhVinhCE/feeds/temperature";
+    final String temperatureTopic = "x";
 
-    final String lightTopic = "ThanhVinhCE/feeds/light";
+    final String lightTopic = "x";
 
-    final String LEDTopic = "ThanhVinhCE/feeds/led";
+    final String LEDTopic = "x";
 
-    final String username = "ThanhVinhCE";
+    final String username = "x";
 
-    final String password = "aio_WMEp70yicqaMwxPnTySIYbnjcgEA";
+    final String password = "x";
 
     public MqttAndroidClient mqttAndroidClient;
 

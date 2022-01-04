@@ -7,12 +7,12 @@
 #include "Adafruit_MQTT_Client.h"
 #include <Ticker.h>
 
-#define WLAN_SSID         "GK"
-#define WLAN_PASS         "244466666"
+#define WLAN_SSID         "your_ssid"
+#define WLAN_PASS         "pass"
 #define AIO_SERVER        "io.adafruit.com"
 #define AIO_SERVERPORT    1883
-#define AIO_USERNAME      "ThanhVinhCE"
-#define AIO_KEY           "aio_WMEp70yicqaMwxPnTySIYbnjcgEA"
+#define AIO_USERNAME      "username"
+#define AIO_KEY           "yourkey"
 
 // WiFiFlientSecure for SSL/TLS support
 WiFiClient client;
@@ -41,7 +41,7 @@ typedef struct struct_state {
 
 Ticker timer;
 
-uint8_t nodeAddress[] = {0xE8, 0xDB, 0x84, 0x11, 0xF5, 0xE4};
+uint8_t nodeAddress[] = {0xE8, 0xDB, 0x84, 0x11, 0xF5, 0xE4}; // MAC address of esp32
 
 struct_data nodeData;
 struct_state nodeState;

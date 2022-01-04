@@ -14,15 +14,15 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 public class MQTTHelperTemperature {
-    final String serverUri = "tcp://io.adafruit.com:1888";
+    final String serverUri = "x";
 
-    final String clientId = "Android_007";
+    final String clientId = "x";
 
-    final String temperatureTopic = "ThanhVinhCE/feeds/temperature";
+    final String temperatureTopic = "x";
 
-    final String username = "ThanhVinhCE";
+    final String username = "x";
 
-    final String password = "aio_WMEp70yicqaMwxPnTySIYbnjcgEA";
+    final String password = "x";
 
     public MqttAndroidClient mqttAndroidClient;
 

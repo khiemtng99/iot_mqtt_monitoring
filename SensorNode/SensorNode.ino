@@ -25,10 +25,10 @@ typedef struct struct_state {
   uint8_t ledResponse;
 };
 
-uint8_t gatewayAddress[] = {0x30, 0xAE, 0xA4, 0x98, 0x01, 0xF4};
+uint8_t gatewayAddress[] = {0x00, 0x11, 0x22, 0x33, 0x44, 0x55}; // MAC address of esp32
 
 // Insert your SSID
-constexpr char WIFI_SSID[] = "GK";
+constexpr char WIFI_SSID[] = "yourSSID";
 
 struct_data myData;
 String ledRequest;
